@@ -1,0 +1,823 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #6066f2;
+    --border-blue: #b3b4f534;
+    --light-blue: #85c1e6;
+    --orange: #fea83b;
+    --purple: #bd61e1;
+    --light-purple: #9d7cd9;
+    --gray: #989898;
+    --light-gray: #a1a6b2;
+    --pink: rgb(240, 87, 240);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* style the top section background gradient */
+ #top-jumbo{
+     background: background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 34%, #a4d1e8 61%, #9268c9 86%, #847be5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 34%,#a4d1e8 61%,#9268c9 86%,#847be5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ffffff 0%,#ffffff 34%,#a4d1e8 61%,#9268c9 86%,#847be5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+    }
+
+/* style header */
+header{
+    width: 100%;
+    padding: 20px 30px;
+    font-size: .8rem;
+    margin-bottom: 50px;
+}
+header .menu a{
+    color: var(--blue);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;   
+    
+}
+
+header:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+header .logo{
+    display: inline-block;
+    float: left;
+}
+header .logo img{
+    width: 60px;
+    margin-right: 14px;
+    position: relative;
+    top: -10px;
+}
+header .menu{
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 17px;
+}
+header .header-button{
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 18px;
+}
+header .header-button a{
+    text-transform: uppercase;
+    color: white;  
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;     
+    border-radius: 25px;
+    padding: 10px 20px;
+    box-shadow: 2px 8px 10px 0px rgba(0,0,0,.1);
+    ;
+}
+header .header-button i{
+    margin-left: 10px;;
+}
+.header-button .blue-btn{
+    background: var(--blue);
+    margin-right: 15px;
+}
+.header-button .orange-btn{
+    background: var(--orange);
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    
+}
+
+/* style the top section */
+#top-jumbo .container{
+    justify-content: space-between;
+}
+#top-jumbo .left-side{
+    width: 40%;
+}
+#top-jumbo .left-side .large-number{
+    font-size: 20rem;
+    font-weight: 900;
+    color: var(--light-gray);
+    opacity: .1;
+    position: relative;
+   
+}
+#top-jumbo .left-side .info-container{
+    position: relative;
+    top: -150px;
+}
+#top-jumbo .left-side .info-container h1{
+   font-size: 3rem;
+   font-weight: 700;
+   color: var(--blue);  
+   margin-bottom: 30px;
+}
+#top-jumbo .left-side .info-container p{
+    color: var(--gray);  
+    margin-bottom: 30px;
+    line-height: 1.5;
+ }
+#top-jumbo .left-side .email-area{
+     width: 100%;
+ }
+ #top-jumbo .left-side .info-container form{
+     width: 80%;
+     color: var(--gray);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+ }
+ #top-jumbo .left-side .info-container form i{
+    position: relative;
+    left: 20px;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+#top-jumbo .left-side .info-container form input{
+     height: 50px;
+     width: 100%;
+     padding: 0 100px 0 50px;
+     position: relative;
+     left: -20px;
+     right: -100px;
+     z-index: 1;
+     border: none;
+     border-radius: 25px;
+     box-shadow: 0px 4px 16px 1px rgba(0,0,0,0.27)
+     ;
+ }
+#top-jumbo .left-side .info-container form input:focus{
+     outline: none;
+ }
+ #top-jumbo .left-side .info-container form button{
+     height: 40px;
+     width: 100px;
+     text-transform: uppercase;
+     color: white;
+     background: var(--blue);
+     border: none;
+     border-radius: 20px;
+     position: absolute;
+     right: 25px;
+     z-index: 3;
+     font-size: 0.9rem; 
+
+ }
+ #top-jumbo .right-side{
+    width: 60%;
+    text-align: center;
+}
+#top-jumbo .right-side img{
+    display: block;
+    margin: 50px auto;
+    width: 500px;
+    transform: rotate(14deg);
+}
+
+
+/* style section design-by */
+#design-by{
+    /* height: 350px; */
+    overflow: hidden;
+    background: background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(25deg, #ffffff 0%, #ffffff 34%, #a4d1e8 61%, #9268c9 86%, #847be5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(25deg, #ffffff 0%,#ffffff 34%,#a4d1e8 61%,#9268c9 86%,#847be5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(25deg, #ffffff 0%,#ffffff 34%,#a4d1e8 61%,#9268c9 86%,#847be5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+
+
+}
+#design-by .left-side{
+    background: var(--blue);
+    width: 45%;
+    padding: 50px;
+    position: relative;
+    
+    
+    
+}
+#design-by .left-side .background-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.1;
+    width: 100%;
+}
+#design-by .left-side .info-container{
+    /* position: absolute;
+    top: 30px;
+    left: 30px; */
+    color: white;
+    
+}
+#design-by .left-side .info-container .design{
+    display: block;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#design-by .left-side .info-container .title{
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 30px;
+
+}
+#design-by .left-side .info-container ul{
+    line-height: 2rem;
+    margin-bottom: 50px;
+}
+#design-by .left-side .info-container li{
+    display: flex;
+    align-items: center;
+}
+#design-by .left-side .info-container .circle{
+    background: white;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#design-by .left-side .info-container i{
+    font-size: 1.4rem;
+    color: orange;
+}
+#design-by .left-side .info-container a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--blue);
+    background: white;
+    padding: 15px 50px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: .7rem;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+#design-by .right-side{
+    width: 55%;  
+    position: relative;  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#design-by .right-side .item-center{
+    display: flex;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: var(--orange);
+    font-size: 30px;
+    box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.1);
+}
+
+#design-by .right-side .design-item{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--border-blue);
+    border-top: 1px solid var(--border-blue);
+    color: var(--blue);
+    text-transform: uppercase;
+    background: white;
+}
+#design-by .right-side .design-item i{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* style section color */
+#color{
+    margin-bottom: 150px;
+}
+#color .left-side{
+    width: 50%;
+    text-align: center;
+}
+#color .left-side img{
+    width: 400px;
+    display: block;
+    margin: 50px auto;
+    transform: rotate(333deg);    
+}
+#color .right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+#color .right-side .color-circles{
+    padding: 10px;
+    display: flex;
+    background: white;
+    margin-bottom: 10%;
+    border-radius: 80px;
+    box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19);
+-webkit-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19);
+-moz-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19); ;
+}
+#color .right-side  .color-circle{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.19);
+-webkit-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.19);
+-moz-box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.19);
+}
+
+#color .right-side  .color-circle--blue {
+    background: rgb(78,130,221);
+background: linear-gradient(132deg, rgba(78,130,221,1) 0%, rgba(146,116,201,1) 27%, rgba(79,212,174,1) 73%);
+}
+#color .right-side  .color-circle--purple {
+    background: rgb(78,221,158);
+background: linear-gradient(25deg, rgba(78,221,158,1) 0%, rgba(146,116,201,1) 24%, rgba(212,79,161,1) 63%);
+}
+#color .right-side  .color-circle--orange {
+    background: rgb(243,252,51);
+background: linear-gradient(270deg, rgba(243,252,51,1) 0%, rgba(228,43,43,1) 24%, rgba(255,152,39,1) 75%);
+}
+
+#color .right-side .color-info{
+    box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19);
+-webkit-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19);
+-moz-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19); ;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#color .right-side .color-info--title{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 30px auto;
+    font-weight: 100,
+}
+#color .right-side .color-info--title .orange{
+    color: var(--orange);
+}
+#color .right-side .color-info--title .blue{
+    color: var(--blue);
+    font-weight: 900;
+}
+#color .right-side .color-info--title .purple{
+    color: var(--purple);
+}
+
+#color .right-side .color-info--content{
+    display: block;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+#color .right-side .color-info--button{
+    text-decoration: none;
+    
+    text-transform: uppercase;
+    color:var(--blue);
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 30px;
+}
+#color .right-side .color-info--line{
+    width: 20%; 
+    height: 2px;
+    background: rgb(56,149,255);
+    background: linear-gradient(0deg, rgba(56,149,255,1) 0%, rgba(75,7,112,1) 100%);
+}
+
+
+
+/* style section wearing style */
+#wearing-style{
+    background: var(--blue);
+}
+#wearing-style .left-side{
+    width: 50%;
+    padding: 50px 0;
+    position: relative;
+}
+#wearing-style .left-side .half-headphone{
+    display: inline-block;
+    width: 200px;    
+    opacity: 0.5;
+    margin-right: 50px;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+}
+#wearing-style .left-side .side-headphone{
+    display: inline-block;
+    width: 320px;
+    opacity: 0.5;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 40px;
+    right: -60px;
+}
+#wearing-style .right-side{
+    width: 50%;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#wearing-style .right-side h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white; 
+    margin-bottom: 50px; 
+      
+}
+
+#wearing-style .right-side .items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wearing-style .right-side .item{
+    width: 100%;
+    display: flex;
+    color: white;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    align-items: center;
+}
+#wearing-style .right-side .fas, #wearing-style .right-side .fab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 40px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+#wearing-style .right-side .fa-bluetooth-b{
+    border-color: var(--orange);
+}
+#wearing-style .right-side .fa-microphone-alt{
+    border-color: var(--pink);
+}
+
+#wearing-style .right-side .item__content{
+    line-height: 1.5;
+    
+}
+
+#wearing-style .right-side .item__content h2{
+    font-size: 2rem;
+    font-weight: 600; 
+}
+#wearing-style .right-side .item__content a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    padding: 10px 0;
+}
+#wearing-style .right-side .item__content a.orange{
+    color: var(--orange);
+}
+#wearing-style .right-side .item__content a.pink{
+    color: var(--pink);
+}
+
+
+/* style section 'our latest headpohones' */
+#latest .container{
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 0;
+}
+#latest  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#latest  .header h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--blue);
+}
+#latest .header .buttons{
+    display: flex;
+}
+
+#latest .header .fas{
+    padding: 20px 25px;
+    background: white;
+    color: var(--light-gray);
+    border: 1px solid var(--light-gray);   
+}
+
+#latest .header .fa-angle-double-left{    
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px;
+    background: var(--blue);
+    color: white;
+    border: 1px solid var(--blue);   
+}
+#latest .header .fa-angle-double-right{
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+}
+#latest .headphones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#latest .headphone{
+    position: relative;
+    text-align: center;
+    
+
+}
+#latest .headphone .headphone__background{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    
+}
+#latest .headphone .headphone__background.blue{
+    background: linear-gradient(132deg, rgba(78,130,221,1) 0%, rgba(146,116,201,1) 27%, rgba(79,212,174,1) 73%);
+}
+#latest .headphone .headphone__background.purple{
+    background: linear-gradient(25deg, rgba(78,221,158,1) 0%, rgba(146,116,201,1) 24%, rgba(212,79,161,1) 63%);
+}
+#latest .headphone .headphone__background.orange{
+    background: linear-gradient(270deg, rgba(243,252,51,1) 0%, rgba(228,43,43,1) 24%, rgba(255,152,39,1) 75%);
+}
+#latest .headphone img{
+    width: 300px;
+    position: absolute;
+    top: -70px;
+    left: 0px;
+}
+
+#latest .headphone .headphone__cart{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    background: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border: 5px solid white;
+    cursor: pointer;
+}
+#latest .headphone .headphone__cart.blue{
+    background: linear-gradient(132deg, rgba(78,130,221,1) 0%, rgba(146,116,201,1) 27%, rgba(79,212,174,1) 73%);
+}
+#latest .headphone .headphone__cart.purple{
+    background: linear-gradient(25deg, rgba(78,221,158,1) 0%, rgba(146,116,201,1) 24%, rgba(212,79,161,1) 63%);
+}
+#latest .headphone .headphone__cart.orange{
+    background: linear-gradient(270deg, rgba(243,252,51,1) 0%, rgba(228,43,43,1) 24%, rgba(255,152,39,1) 75%);
+
+}
+#latest .headphone .headphone__line{
+    width: 50%;
+    height: 2px;
+    margin: 0 auto 20px;
+}
+#latest .headphone .headphone__line.orange{
+    background: var(--orange);
+}
+#latest .headphone .headphone__line.blue{
+    background: var(--blue);
+}
+#latest .headphone .headphone__line.light-blue{
+    background: var(--light-blue);
+}
+#latest .headphone .headphone__price{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+#latest .headphone .headphone__price.orange{
+    color: var(--orange);
+}
+#latest .headphone .headphone__price.blue{
+    color: var(--blue);
+}
+#latest .headphone .headphone__price.light-blue{
+    color: var(--light-blue);
+}
+
+
+/* style 'say hello to us' */
+
+#hello .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+#hello img{
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 300px;
+}
+
+#hello h1{
+    font-size: 3rem;
+    color: var(--blue);
+    font-weight: 900;
+    margin: 50px auto 40px;
+}
+#hello .form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-gray);
+    position: relative;
+    right: -40px;
+    
+}
+#hello .form .email-area{
+    position: relative;
+}
+
+#hello .form input{
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 5px 15px 7px rgba(0,0,0,0.24);
+    padding-left: 50px;
+    position: relative;
+    left: -40px;
+    z-index: 1;
+}
+#hello .form .fas, #hello .form .far{
+    z-index: 3;
+    position: relative;
+    
+}
+#hello .form input:focus{
+    outline: none;
+}
+#hello .form input[name="email"]{
+    padding-right: 100px;
+}
+#hello .form button{
+    height: 40px;
+    width: 100px;
+    text-transform: uppercase;
+    color: white;
+    background: var(--blue);
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    top: 5px;
+    right: 44px;
+    z-index: 3;
+    font-size: 0.9rem; 
+}
+#hello .form button:focus{
+    outline: none;
+}
+
+
+/* style footer */
+footer{
+    text-align: center;
+    background: var(--blue);
+    padding: 50px;
+    line-height: 2.5;
+    color: white;
+}
+
+footer h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+
+}
+
+footer h2 span{
+    color: var(--orange);
+    font-weight: 700;
+}
+
+footer .menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+footer .social a >i{
+    color: var(--light-gray);
+    margin: 10px;
+    font-size: 1.5rem;
+    
+}
+
+/* reponsive */
+@media (max-width: 1200px){
+    #top-jumbo .right-side img{        
+        transform: rotate(0deg);
+    }  
+    #latest .headphone .headphone__background{
+        width: 200px ;
+        height: 200px;
+    }
+    #latest .headphone img{
+        width: 200px;
+        top: -40px;
+    }
+    #top-jumbo .left-side .info-container form button{
+        width: 80px;
+    }
+}
+@media (max-width: 1000px){
+    #color .left-side img{
+        width: 300px;
+    }
+    #wearing-style .left-side .half-headphone{
+        width: 150px;
+    }
+    #wearing-style .left-side .side-headphone{
+        width: 243px;
+    }
+    #top-jumbo .left-side .info-container form button{
+        top: 60px;   
+        left: 30%; 
+     }
+     #top-jumbo .left-side .info-container form input{
+         padding-right: 20px;
+     } 
+}
+@media (max-width: 900px){
+    #color .left-side img{
+        width: 250px;
+    } 
+    #top-jumbo .right-side img{
+        width: 400px;
+        margin: 30% auto;
+    }
+
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+}
+    
