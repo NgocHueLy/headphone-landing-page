@@ -29,6 +29,10 @@ header{
     padding: 20px 30px;
     font-size: .8rem;
     margin-bottom: 50px;
+
+}
+header .menu-small{
+    display: none;
 }
 header .menu a{
     color: var(--blue);
@@ -96,6 +100,7 @@ header .header-button i{
     max-width: 1200px;
     margin: 0px auto;
     display: flex;
+
     
 }
 
@@ -374,8 +379,8 @@ background: linear-gradient(270deg, rgba(243,252,51,1) 0%, rgba(228,43,43,1) 24%
 
 #color .right-side .color-info{
     box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19);
--webkit-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19);
--moz-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19); ;
+    -webkit-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.19); ;
     padding: 20px;
     border-radius: 5px;
     display: flex;
@@ -790,11 +795,22 @@ footer .social a >i{
     #color .left-side img{
         width: 300px;
     }
+    #wearing-style .left-side{
+        width: 30%;
+    }
+    #wearing-style .right-side{
+        width: 70%;
+    }
+
     #wearing-style .left-side .half-headphone{
         width: 150px;
+        position: absolute;
+        top: 20px;
+        left: -25px;
     }
     #wearing-style .left-side .side-headphone{
         width: 243px;
+        right: -90px;
     }
     #top-jumbo .left-side .info-container form button{
         top: 60px;   
@@ -817,7 +833,206 @@ footer .social a >i{
 
 @media (max-width: 800px){
     .container{
+        width: 100% im !important;
+    }
+    
+    header .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    header .menu-small i{
+        font-size: 1.5rem;
+        color: var(--orange);
+    }
+
+    header .menu{
+        display: none;
+    }
+
+    header .menu-small{
+        display: block;
+    }
+   
+    header .menu-small__dropdown{
+        position: absolute;
+        background: var(--light-blue);
+        padding: 10px;
+        width: fit-content;
+        display: none;
+        
+    }
+    header .menu-small__dropdown a{
+        display: block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;  
+        border-bottom: 1px solid white;
+    }
+    header .menu-small__dropdown a:nth-last-child(1){
+        border-bottom: none;   
+    }
+    
+    header .header-button{
+        top: 30px ;
+    }
+
+    .container{
+        width: 100vw;
+        /* padding: 20px; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #top-jumbo .container .left-side{
+        width: 100%;
+        height: fit-content;
+        padding-left: 20px;
+    }
+    #top-jumbo .left-side .info-container p{
+        padding: 0 10% 0 20%;
+    }
+    
+    #top-jumbo .left-side .info-container form button{
+        top: 5px;
+        left: auto;
+        right: 25px;
+       
+
+    }
+    #topjumbo .container .right-side{
         width: 100%;
     }
-}
+
+    #top-jumbo .right-side img{
+        margin:  0px auto 50px;
+    }
+
+    #design-by .left-side{
+        width: 100%;
+        
+      
+    }
+    #design-by .left-side .info-container{
+        text-align: center;        
+    }
+    #design-by .left-side .info-container ul{
+        padding-left: 25%;
+    }
+    #design-by .right-side{
+        width: 100%;
+    }
+    #design-by .right-side .design-item{
+        padding: 50px;
+        border-top: none;
+        border-bottom: 1px solid var(--border-blue);
+    }
+    #color .container{
+        flex-direction: row;
+    }
+    #wearing-style .container{
+        position: relative;
+        flex-direction: row-reverse;    
+    }   
+    #wearing-style .right-side{
+        width: 70%;
+    }
+    #wearing-style .left-side{
+        width: 30%;
+    }
+    #wearing-style .left-side .half-headphone{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0;
+        opacity: .2;
+    }
+    #wearing-style .left-side .side-headphone{
+        position: relative;
+        bottom: -24px;
+        left: -21px;
+        opacity: .2;
+    }
+    #latest .container{
+        padding: 50px;
+        align-items:stretch;
+    }
+    #latest .headphones{
+        flex-direction: column;
+    }
+    #latest .headphones .headphone{
+        margin-bottom: 100px;
+        
+    }
+    #latest .headphones .headphone__background{
+        width: 400px;
+        height: 400px;
+    }
+    #latest .headphones .headphone img{
+        width: 400px;
+        top: -80px;
+    }
     
+    #hello .form{
+        right: -30px;
+    }
+}
+
+@media (max-width: 650px){
+    #hello .form{
+        flex-direction: column;
+    }
+    #hello .form .name-area{
+        margin-bottom: 20px;
+    }
+}
+ 
+@media (max-width: 500px){
+    #top-jumbo .right-side{
+        width: 100%;
+    }
+    #design-by .left-side .info-container ul{
+        padding-left: 0;
+    }
+    #color .left-side{
+        display: none;
+    }
+    #color .right-side{
+        width: 100%;
+    }
+    #wearing-style .left-side{
+        display: none;
+    }
+    #wearing-style .right-side{
+        width: 100%;
+    }
+    #latest .header {
+        flex-direction: column;
+    }
+    #latest .header h1{
+        margin-bottom: 20px;
+    }
+    #latest .headphones .headphone__background{
+        width: 200px;
+        height: 200px;
+    }
+    #latest .headphones .headphone img{
+        width: 200px;
+        top: -50px;
+    }
+    #latest .headphone .headphone__cart{
+        width: 50px;
+        height: 50px;
+    }
+    footer h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+   
+    
+    
+
+}
