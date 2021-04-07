@@ -877,7 +877,7 @@ footer .social a >i{
     }
     
     header .header-button{
-        top: 30px ;
+        top: 18px ;
     }
 
     .container{
@@ -908,7 +908,9 @@ footer .social a >i{
     }
 
     #top-jumbo .right-side img{
-        margin:  0px auto 50px;
+        margin:  0px auto;
+        position: relative;
+        top: -70px;
     }
 
     #design-by .left-side{
@@ -926,7 +928,7 @@ footer .social a >i{
         width: 100%;
     }
     #design-by .right-side .design-item{
-        padding: 50px;
+        padding: 50px 0;
         border-top: none;
         border-bottom: 1px solid var(--border-blue);
     }
@@ -1031,8 +1033,38 @@ footer .social a >i{
         font-size: 1.5rem;
         font-weight: 600;
     }
-   
+}
+
+@media screen and (max-width: 500px){
+
+    header{
+        padding: 10px;
+    }
+    header .logo img{
+        margin-right: 5px;
+    }
     
-    
+    header .header-button .blue-btn{
+        margin-right: 5px;
+        padding: 5px;
+        font-size: .6rem;
+    }
+    header .header-button .blue-btn i{
+        margin-left: 5px;
+        
+    }
+
+    header .header-button .orange-btn{
+        padding: 5px;
+        font-size: .6rem;
+    }
+    #top-jumbo .left-side .large-number{
+        font-size: 15rem;
+    }
+    #top-jumbo .right-side img{
+        width: 200px;
+        position: relative;
+        
+    }
 
 }
